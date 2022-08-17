@@ -40,7 +40,7 @@ end pn_code_gen;
 architecture Behavioral of pn_code_gen is
 
 	component d_ff port (D,clk,reset : in std_logic; -- D Flip Flop
-								Q : out std_logic);
+				Q : out std_logic);
 	end component;
 
 	signal Q1,Q2,Q3,Q4,x : std_logic;
