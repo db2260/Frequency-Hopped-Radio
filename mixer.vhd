@@ -16,7 +16,7 @@ architecture Behavioral of mixer is
 
   component bpsk_mod port (clk,valid_in,reset : in std_logic;
                       valid_out : out std_logic;
-							 data_in : in std_logic_vector(7 downto 0);
+			 data_in : in std_logic_vector(7 downto 0);
                       data_out : out std_logic_vector(7 downto 0));
   end component;
 
@@ -25,7 +25,7 @@ architecture Behavioral of mixer is
   end component;
   
   component pn_code_gen port (clk,reset : in std_logic;
-									pn_out : out std_logic);
+				pn_out : out std_logic);
 	end component;
   
   signal vin,vout : std_logic;
