@@ -18,7 +18,7 @@ architecture test of fhss_tx_tb is
   radio : entity work.mixer
     port map(clock => clk,
               reset => rst,
-				  input_data => mt, 
+		input_data => mt, 
               output_data => data);
       
   
